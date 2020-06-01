@@ -1,6 +1,4 @@
 package com.company;
-import java.util.Comparator;
-import java.util.TreeSet;
 
 public class task {
     static int time;
@@ -36,4 +34,8 @@ public class task {
         System.out.println(counter);
     }
 }
+
+
+
+
 
