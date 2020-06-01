@@ -1,9 +1,8 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Workspace<T> {
+public class PriorityQueue<T> {
 
     private class Node {
 
@@ -78,7 +77,7 @@ public class Workspace<T> {
         return (T) head.value;
     }
 
-    public void allChecks(Workspace<Integer> list ) throws Exception {
+    public void allChecks(PriorityQueue<Integer> list ) throws Exception {
         for (int i = 0; i < list.size; i++){
             int t = list.check();
             System.out.println(t);
