@@ -6,7 +6,6 @@ public class task {
     int Priority;
     int randomX;
 
-
     public task(int time, int pages, int Priority, int randomX) {
         this.time = time;
         this.pages = pages;
@@ -34,8 +33,3 @@ public class task {
         System.out.println(counter);
     }
 }
-
-
-
-
-
