@@ -9,7 +9,7 @@ public class task {
     int randomX;
 
 
-public task(int time, int pages, int Priority, int randomX) {
+    public task(int time, int pages, int Priority, int randomX) {
         this.time = time;
         this.pages = pages;
         this.Priority = Priority;
@@ -17,11 +17,11 @@ public task(int time, int pages, int Priority, int randomX) {
     }
 
     public static int returner(task t) {
-    int i = time*pages;
-    return i;
+        int i = time*pages;
+        return i;
     }
 
-    public static void count(Workspace<task> space) throws Exception {
+    public static void count(PriorityQueue<task> space) throws Exception {
         int counter = 0;
         for (int i = 0; i < space.getSize(); i++){
             task t = space.check();
@@ -64,4 +64,7 @@ class PriceComparator implements Comparator<task> {
         }
     }
 }
+
+
+
 
