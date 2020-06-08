@@ -6,8 +6,8 @@ public class PriorityQueue<T> {
 
     private class Node {
 
-        public transient T value;
-        public transient Node next;
+        public T value;
+        public Node next;
 
         public Node(T value, Node next) {
             this.next = next;
