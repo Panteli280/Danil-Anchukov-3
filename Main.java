@@ -21,7 +21,7 @@ public class Main {
         PriceComparator myComparator = new PriceComparator();
         myList.sort(myComparator);
 
-        Workspace<task> list = new Workspace<>();
+        PriorityQueue<task> list = new PriorityQueue<>();
         list.addList(myList);
         task.count(list);
     }
